@@ -1,0 +1,73 @@
+﻿<Window x:Class="MMSG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MMP" Height="450" Width="800">
+    <Grid>
+        
+        <Button Name="ButtonGenerateWorld" Content="Generate World" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="271" Height="34" Click="ButtonGenerateWorld_Click"/>
+        <GroupBox Header="World Settings" HorizontalAlignment="Left" Height="85" Margin="10,20,0,0" VerticalAlignment="Top" Width="271">
+            <StackPanel Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="World name:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="77"/>
+                    <TextBox Name="TextBoxWorldName" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="world" VerticalAlignment="Top" Width="110"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="World seed:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Name="TextBoxWorldSeed" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="yayeet" VerticalAlignment="Top" Width="110"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Generation Settings" HorizontalAlignment="Left" Height="262" Margin="10,110,0,0" VerticalAlignment="Top" Width="271">
+            <StackPanel Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Server count: " HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Name="TextBoxServerCount" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="30"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="RAM per server:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Name="TextBoxRam" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="512M" VerticalAlignment="Top" Width="110"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Border radius:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Name="TextBoxBorderRadius" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="10000" VerticalAlignment="Top" Width="110"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Starting port:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Name="TextBoxStartingPort" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="25565" VerticalAlignment="Top" Width="110"/>
+                </Grid>
+                <Label Content="Output location:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox Name="TextBoxOutputLocation" Grid.Column="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="C:\Users\Joshua\Documents\pregen" VerticalAlignment="Top" Width="249"/>
+                <Button Margin="0, 10" Name="ButtonSelectFolder" Content="Select folder" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Center" Height="26" Click="ButtonSelectFolder_Click"/>
+                <CheckBox Name="CheckBoxPatchJar" Content="Patch JAR first"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Name="ButtonStopAll" Content="Stop all" HorizontalAlignment="Left" Margin="453,222,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStopAll_Click"/>
+    </Grid>
+</Window>
