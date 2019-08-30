@@ -92,5 +92,14 @@ namespace MMSG.Instances
                 javaServer.StandardInput.WriteLine("stop");
             }
         }
+
+        public void ExecuteCommands()
+        {
+            var count = Instances.Count;
+            foreach (var javaServer in Instances)
+            {
+                
+            }
+        }
     }
 }

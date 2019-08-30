@@ -61,7 +61,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\WorldBorderCommand.cs" />
     <Compile Include="Util\IO.cs" />
+    <Compile Include="Util\WorldBorder.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
