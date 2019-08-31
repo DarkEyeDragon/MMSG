@@ -9,6 +9,6 @@ namespace MMSG.Util
 {
     class WorldBorder
     {
-        public static List<Point> GenerateCoordinates()
+        
     }
 }

@@ -15,12 +15,10 @@ namespace MMSG.Instances
     {
         public List<JavaServer> Instances { get; set; }
         public string JarLocation { get; set; }
-        public Regex Regex { get; set; }
 
         public InstanceHandler()
         {
             Instances = new List<JavaServer>();
-            Regex = new Regex(@"patched_.+\.jar", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         public InstanceHandler(string jarLocation) : this()
