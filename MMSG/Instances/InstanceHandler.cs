@@ -91,13 +91,6 @@ namespace MMSG.Instances
             }
         }
 
-        public void ExecuteCommands()
-        {
-            var count = Instances.Count;
-            foreach (var javaServer in Instances)
-            {
-                
-            }
-        }
+        
     }
 }

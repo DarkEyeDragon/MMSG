@@ -74,6 +74,25 @@ namespace MMSG
             InstanceHandler.Instances.Clear();
             InstanceHandler.Create(startingPort, serverCount, ram, worldName, outputLocation, seed);
             InstanceHandler.RunAll();
+
+
+            //var radius = 
+
+            //Create worldborders
+            /*var sqrt = Math.Sqrt(serverCount);
+            var width = canWidth / sqrt;
+            for (var i = 0; i < sqrt; i++)
+            {
+                for (var j = 0; j < sqrt; j++)
+                {
+                    double x = centerX / sqrt * i * 2;
+                    double y = centerY / sqrt * j * 2;
+
+
+                    Square.Draw(Canvas, (int)Math.Round(x), (int)Math.Round(y), (int)(Math.Round(x) + width),
+                        (int)Math.Round(y + width));
+                }
+            }*/
         }
 
         private void ButtonStopAll_Click(object sender, RoutedEventArgs e)

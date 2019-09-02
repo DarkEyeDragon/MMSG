@@ -62,9 +62,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\SpawnCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
     <Compile Include="Command\WorldBorderCommand.cs" />
+    <Compile Include="Instances\OutputHandler.cs" />
+    <Compile Include="Instances\SearchType.cs" />
+    <Compile Include="Instances\SubscriptionArgs.cs" />
     <Compile Include="Util\IO.cs" />
+    <Compile Include="Util\Point3.cs" />
     <Compile Include="Util\WorldBorder.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
